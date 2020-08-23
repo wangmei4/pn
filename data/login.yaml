@@ -1,0 +1,17 @@
+#用户登录成功
+url: http://127.0.0.1:5000/login
+method: post
+data:
+  username: 无涯
+  password: Admin@123
+  age: 18
+  sex: 男
+except: 无涯
+---
+url: http://127.0.0.1:5000/login
+method: post
+data:
+  password: Admin@123
+  age: 18
+  sex: 男
+except: 用户名不能为空
